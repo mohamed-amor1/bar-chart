@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USA GDP Bar Chart</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <style>
+      #tooltip {
+        position: absolute;
+        background-color: #fff;
+        border: 2px solid #ccc;
+        padding: 10px;
+        max-width: 200px;
+        display: block;
+        font-size: 18px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      .highlighted-bar {
+        fill: orange;
+      }
+
+      .bar {
+        /* Define the default fill color for bars */
+        fill: steelblue;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Use the full viewport height */
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module" src="./src/index.js"></script>
+
+    <div id="root"></div>
+    <div class="container"></div>
+  </body>
+</html>
